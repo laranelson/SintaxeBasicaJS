@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<title> Arthur Lara </title>
+<estilo>
+    html {
+    imagem de fundo : gradiente linear ( 45 graus , amarelo , verde);
+    }
+    . Calculadora {
+    cor de fundo : rgba ( 0 , 0 , 0 , 0,5 );
+    posição : absoluta;
+    preenchimento : 15 px ;
+    raio da borda : 15 px ;
+    borda : 3 px totalmente preto;
+    topo : 50 % ;
+    esquerda : 50 % ;
+    transformar : traduzir ( -50 % , -50 % );
+    }
+
+    h1 {
+    cor : branco;
+
+    }
+    </ estilo>
+    </ cabeça>
+    < corpo>
+        < div class=" Calculadora ">
+            < h1> Calculadora </ h1>
+            <! ---- Para criar uma palavra use h1, h2, h3, h4, h5 ou h6 ->
+
+                < input type=" number " id=" n1 ">
+                    < Br>
+                        < br>
+                            < input type=" number " id=" n2 ">
+
+                                < Br>
+                                    < br>
+
+                                        < button onclick=" Somar () "> Somar </ button>
+                                        <! - Butão ->
+                                            < button onclick=" Menos () "> Subtrair </ button>
+
+                                            < Br>
+                                                < br>
+
+                                                    < button onclick=" Vezes () "> Multiplicar </ button>
+                                                    < button onclick=" Dividir () "> Dividir </ button>
+                                                    < h1 id=" Resposta "> Resultado </ h1>
+
+
+                                                </ div>
+
+                                                < script>
+
+                                                    var n1, n2, res;
+
+                                                    function Somar() {
+                                                        n1 = parseFloat(document.getElementById("n1").value
+                                                        )
+                                                        n2 = parseFloat(document.getElementById("n2").value
+                                                        )
+                                                        res = n1 + n2;
+                                                        documento.getElementById("Resposta").innerText = res
+                                                            ;
+                                                    }
+                                                    function Menos() {
+                                                        n1 = parseFloat(document.getElementById("n1").value
+                                                        )
+                                                        n2 = parseFloat(document.getElementById("n2").value
+                                                        )
+                                                        res = n1 - n2;
+                                                        documento.getElementById("Resposta").innerText = res
+                                                            ;
+                                                    }
+                                                    function Vezes() {
+                                                        n1 = parseFloat(document.getElementById("n1").value
+                                                        )
+                                                        n2 = parseFloat(document.getElementById("n2").value
+                                                        )
+                                                        res = n1 * n2;
+                                                        documento.getElementById("Resposta").innerText = res
+                                                            ;
+                                                    }
+                                                    function Dividir() {
+                                                        n1 = parseFloat(document.getElementById("n1").value
+                                                        )
+                                                        n2 = parseFloat(document.getElementById("n2").value
+                                                        )
+                                                        res = n1 / n2;
+                                                        documento.getElementById("Resposta").innerText = res
+                                                            ;
+                                                    }
+                                                </ script >
+                                            </ body >
+                                    </ html >
